@@ -1,0 +1,18 @@
+Procédure dot_product(v1, v2, n, ps)
+  ps ← 0
+  Pour i de 0 à n-1 faire
+      ps ← ps + v1[i] * v2[i]
+  FinPour
+FinProcédure
+
+Début
+  Lire n
+  Lire vecteur v1[n], vecteur v2[n]
+  Appeler dot_product(v1, v2, n, ps)
+
+  Si ps = 0 alors
+      Afficher "Les vecteurs sont orthogonaux"
+  Sinon
+      Afficher "Les vecteurs ne sont pas orthogonaux"
+  FinSi
+Fin
