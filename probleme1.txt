@@ -1,0 +1,19 @@
+Début
+  Ensemble1 ← [3, 1, 7, 9]
+  Ensemble2 ← [2, 4, 1, 9, 3]
+  somme ← 0
+
+  Pour i de 0 à taille(Ensemble1)-1 faire
+      Si Ensemble1[i] n’appartient pas à Ensemble2 alors
+          somme ← somme + Ensemble1[i]
+      FinSi
+  FinPour
+
+  Pour j de 0 à taille(Ensemble2)-1 faire
+      Si Ensemble2[j] n’appartient pas à Ensemble1 alors
+          somme ← somme + Ensemble2[j]
+      FinSi
+  FinPour
+
+  Afficher somme
+Fin
